@@ -1,0 +1,28 @@
+# Makes a button to control automated home
+automation_on_off:
+  name: Activate automation
+  initial: on
+alarm_on_off:
+  name: Alarm On/Off
+  initial: on
+monday:
+  name: Monday
+  initial: on
+tuesday:
+  name: Tuesday
+  initial: on
+wednesday:
+  name: Wednesday
+  initial: on
+thursday:
+  name: Thursday
+  initial: on
+friday:
+  name: Friday
+  initial: on
+saturday:
+  name: Saturday
+  initial: off
+sunday:
+  name: Sunday
+  initial: off
