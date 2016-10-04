@@ -1,6 +1,6 @@
 # clockalarm
 
-##A clockalarm for Home Assistant to turn on you philips hue
+####A clockalarm for Home Assistant to turn on your philips hue
 
 Copy the clockalarm.py input 'homeassistantfolder/custom_componenets'
 
