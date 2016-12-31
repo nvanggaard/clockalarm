@@ -1,10 +1,4 @@
 # Makes a button to control automated home
-automation_on_off:
-  name: Activate automation
-  initial: on
-alarm_on_off:
-  name: Alarm On/Off
-  initial: on
 monday:
   name: Monday
   initial: on
