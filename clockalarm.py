@@ -20,9 +20,11 @@ MIN_TIME_BETWEEN_UPDATES = timedelta(seconds=60)
 MIN_TIME_BETWEEN_FORCED_UPDATES = timedelta(seconds=60)
 
 CONF_ENTITY = 'entity_id'
+CONF_HOME = 'device_home'
 
 def setup(hass, config):
 	ENTITY_ID = config[DOMAIN].get(CONF_ENTITY)
+	DEVICE_HOME = config[DOMAIN].get(CONF_HOME)
 	if ENTITY_ID == None:
 		log.error('No entity is given!')
 	elif not isinstance(ENTITY_ID, str):
@@ -37,7 +39,10 @@ def setup(hass, config):
 		if hass.states.get('input_boolean.' + WEEKDAY[datetime.datetime.today().weekday()]).state == 'off':
 			log.info('No alarm for today')
 		elif wake_up_time == time_to_execute:
-			hass.services.call('homeassistant', 'turn_on', {"entity_id": ENTITY_ID })
+			if DEVICE_HOME == None:
+				hass.services.call('homeassistant', 'turn_on', {"entity_id": ENTITY_ID })
+			elif hass.states.get(DEVICE_HOME).state == 'home':
+				hass.services.call('homeassistant', 'turn_on', {"entity_id": ENTITY_ID })
 
 		return True
 	hass.bus.listen(homeassistant.core.EVENT_TIME_CHANGED, update)
