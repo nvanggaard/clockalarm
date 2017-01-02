@@ -1,6 +1,6 @@
 # clockalarm
 
-####A clockalarm for Home Assistant to turn on your philips hue
+####A clockalarm for Home Assistant to turn on a scene
 
 Copy the clockalarm.py input 'homeassistantfolder/custom_componenets'
 
@@ -27,7 +27,7 @@ clockalarm:
 
 entity_id (required) should contain the scene you want to run on alarm time
 
-device_home (optional) should contain the device, or group of devices which should be home, to execute the scene.
+device_home (optional) should contain the device, or group of devices which should be home (if one device is home, it executes the event!), to execute the scene.
 
 
 If no values are given for the optional fields it will take the default values written in the code snippet.
