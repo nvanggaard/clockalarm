@@ -48,5 +48,5 @@ Alarm:
 ```
 After everything is set-up a panel like this should be shown:
 
-![Screenshot](http://imgur.com/a/ftSIn)
+![](http://i.imgur.com/NeUNBjD.png)
 
