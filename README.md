@@ -2,7 +2,7 @@
 
 ####A clockalarm for Home Assistant to turn on a scene
 
-Copy the clockalarm.py into 'homeassistantfolder/custom_componenets'
+Copy the clockalarm.py into `homeassistantfolder/custom_components`
 
 input_boolean.yaml and input_select.yaml into 'homeassistantfolder'
 
