@@ -1,6 +1,6 @@
 # clockalarm
 
-####A clockalarm for Home Assistant to turn on a scene
+#### A clockalarm for Home Assistant to turn on a scene
 
 Copy the clockalarm.py into `homeassistantfolder/custom_components`
 
@@ -20,8 +20,8 @@ After this the clock alarm componenet can be initialized by inserting:
 
 ```yaml
 clockalarm:
-	entity_id: scene.wakeup
-	device_home: device_tracker.phone_id
+    entity_id: scene.wakeup
+    device_home: device_tracker.phone_id
 
 ```
 
