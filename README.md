@@ -1,5 +1,5 @@
 # clockalarm
-
+### Deprecated 
 #### A clockalarm for Home Assistant to turn on a scene
 
 Copy the clockalarm.py into `homeassistantfolder/custom_components`
