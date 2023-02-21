@@ -1,4 +1,6 @@
 # clockalarm
+### DEPRECATED 
+This is no longer maintained 
 
 #### A clockalarm for Home Assistant to turn on a scene
 
